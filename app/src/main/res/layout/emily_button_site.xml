@@ -1,0 +1,125 @@
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/imageView3"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/roundnupjuk"
+        android:layout_height="30dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/mascot" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  넙죽이  "/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_below="@id/imageView3"
+        android:textColor="#fff"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:background="@drawable/round"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="order"
+        android:textSize="15dp" />
+
+
+
+    <TextView
+        android:id="@+id/time4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll"
+        android:textColor="#000"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="3dp"
+        android:text="오후 1:23"
+        android:textSize="12dp" />
+
+    <HorizontalScrollView
+        android:id = "@+id/scroll"
+        android:layout_below="@id/text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_below="@id/text2"
+                android:textSize="13dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/button1"
+                android:layout_toRightOf="@+id/button1"
+                android:background="@drawable/round"
+                android:text="카대전" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="13dp"
+                android:layout_below="@id/text2"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/button2"
+                android:layout_toRightOf="@+id/button2"
+                android:background="@drawable/round"
+                android:text="학사요람" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="13dp"
+                android:layout_below="@id/text2"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/button2"
+                android:layout_toRightOf="@+id/button2"
+                android:background="@drawable/round"
+                android:text="도서관" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:textSize="13dp"
+                android:layout_below="@id/text2"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/round"
+                android:text="학사공지" />
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+</RelativeLayout>

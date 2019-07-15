@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/mascot" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_below="@id/imageView"
+        android:layout_width="360dp"
+        android:textSize="15dp"
+        android:layout_height="wrap_content"
+        android:text="궁금한 점이 버튼에 있다면 눌러서 해결하시고\n그 외 궁금한 점은 챗봇을 이용해주세요!" />
+
+    <Button
+        android:id="@+id/first_3"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="6dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="6dp"
+        android:drawableTop="@drawable/fork"
+        android:layout_toEndOf="@+id/first_1"
+        android:layout_toRightOf="@+id/first_4"
+        android:background="@drawable/buttonshape"
+        android:text="학식"
+        android:padding="10dp"
+        android:gravity="bottom|center"
+        android:textSize="10dp"/>
+
+    <Button
+        android:id="@+id/first_4"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:drawableTop="@drawable/internet"
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@+id/first_3"
+        android:layout_toRightOf="@id/first_3"
+        android:background="@drawable/buttonshape"
+        android:gravity="bottom|center"
+        android:padding="8dp"
+        android:text="사이트 접속"
+        android:textSize="10dp" />
+
+
+    <Button
+        android:id="@+id/first_7"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="6dp"
+        android:drawableTop="@drawable/discuss"
+        android:layout_toEndOf="@+id/first_4"
+        android:layout_toRightOf="@+id/first_4"
+        android:background="@drawable/buttonshape"
+        android:gravity="bottom|center"
+        android:padding="8dp"
+        android:text="자주 묻는 정보"
+        android:textSize="9dp" />
+
+    <Button
+        android:id="@+id/first_8"
+        android:layout_width="67dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/textView"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/first_7"
+        android:layout_toRightOf="@+id/first_7"
+        android:background="@drawable/buttonshape_chat"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="직접\n 이야기하기"
+        android:textSize="12dp" />
+
+</RelativeLayout>
