@@ -29,10 +29,22 @@ On clicking the second button, the window is switched to yet another button base
 
 두번째 버튼을 누르면, 버튼 형식을 기반으로 한 챗봇 윈도우가 열리게 되고, 카이스트 학생들이 자주 사용하는 웹사이트들을 
 띄워주고 버튼을 누르면 해당 
-사이트로 연결해 
-줍니다.
+사이트로 연결해 줌.
 
-DialogFLow, FIrebase DB, Android Studio를 이용한 카이스트 내부 정보를 알려주는 채팅봇 구현(이후 카톡과도 연동 가능)
-1. DialogFlow: Intent와 entities를 이용한 ML 학습을 시켜 자연어를 기계가 알아듣고 서버에 Post 요청을 보내 항목별로 답변을 도출하도록 구현
-2. Firebase DB: Web crawling을 이용하여 웹사이트들에 흩어져 있는 정보들을 한 DB에 모아 JSON형태로 정리해 놓음
-3. Androids Studio: DialogFlow와 안드로이드를 연동하여 Dialogflow에서 구현한 ML을 가져올 수 있도록 함.
+## ChatBot
+
+<img width="200" alt="스크린샷 2019-09-12 오후 9 45 20" src="https://user-images.githubusercontent.com/50355670/64785200-ca7d2f80-d5a6-11e9-91dd-e86147d5442d.png">      <img width="200" alt="스크린샷 2019-09-12 오후 7 46 21" src="https://user-images.githubusercontent.com/50355670/64784877-15e30e00-d5a6-11e9-8a2f-7e270fc620db.png">
+
+The main feature of the chatbot can be accessed by clicking the button. The message is sent to the server that is connected to the dialogfow. Dialogflow has been trained to understand various questions in Korean.
+
+1. Asking Locations, and its open,close time
+2. Cafeteria Menu
+3. Club information
+4. Professor information
+5. Subject&Class information
+6. School Schedules(ex. start of semester)
+....
+
+Most of the information is gathered by crawling different sites regarding each information using beautifulsoup in python. 
+
+가장 주요한 기능인 챗봇 기능은 마지막 버튼을 누르면 된다. 채팅방에서 쓴 메세지는 dialogflow와 연결되어 있는 서버로 보내지고, dialogflow에서 메세지를 받아서 화면에 띄운다. Dialogflow는 위와 같은 질문들에 대한 대답을 받을 수 있도록 train되어 있다. 대부분의 챗봇이 가진 정보들은 학교 웹사이트들에서 beautifulsoup로 크롤링한 정보들을 DB에 저장하고, DB의 정보를 서버가 가져오는 형식으로 구성되어 있다.
